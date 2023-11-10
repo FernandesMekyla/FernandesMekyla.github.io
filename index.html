@@ -22,7 +22,16 @@ var myQuestions = [
       C: 'Anastasia'
     },
     correctAnswer: 'C'
-  }
+  },
+ {
+  question: "What is Ariels fish name?",
+  answers: {
+      A: 'Sebastian',
+      B: 'Ursula',
+      C: 'Flounder'
+    },
+    correctAnswer: 'C'
+  },
 ];
 
 var quizContainer = document.getElementById('quiz');
@@ -90,7 +99,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
    
-    resultsContainer.innerHTML = numCorrect + '2 out of 2' + questions.length;
+    resultsContainer.innerHTML = numCorrect + '3 out of 3' + questions.length;
   }
 
 
